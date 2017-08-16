@@ -183,7 +183,7 @@ Anyone can help out and it looks way more complicated than it is! If you would r
 5. Add your name/username, donation address, and any notes you would like on ~line 240 of the language.js file.
 6. Open a PR and leave us a brief description of what you did and any issues you ran into or comments you have.
 
-Read more @ [Help us translate Pyrus into ALL THE LANGUAGES!](https://www.reddit.com/r/ethereum/comments/4z55s2/help_us_translate_myetherwalletcom_into_all_the/)
+Read more @ [Help us translate Galaxy into ALL THE LANGUAGES!](https://www.reddit.com/r/ethereum/comments/4z55s2/help_us_translate_myetherwalletcom_into_all_the/)
 
 
 

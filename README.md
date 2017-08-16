@@ -1,4 +1,4 @@
-## Website: https://pyrus.ubiqsmart.com
+## Website: https://dbix.io
 ## Chrome Extension: https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm
 ## Download the Latest Release: https://github.com/kvhnuke/etherwallet/releases/latest
 - dist-vX.X.X.X.zip is the smaller package containing the gh-pages branch aka Pyrus
@@ -10,16 +10,16 @@
 
 
 
-### Pyrus
+### Galaxy
 
-Pyrus is an open source, javascript, client-side tool for generating UBQ wallets. It was created and is maintained by [kvhnuke](https://github.com/kvhnuke) and [tayvano](https://github.com/tayvano) aka [insomniasexx](https://www.reddit.com/user/insomniasexx).
+Galaxy is an open source, javascript, client-side tool for generating DBIX wallets. It was created and is maintained by [kvhnuke](https://github.com/kvhnuke) and [tayvano](https://github.com/tayvano) aka [insomniasexx](https://www.reddit.com/user/insomniasexx).
 
 - Generate Wallets completely client side.
 - Unlock variety of key types: raw private key, encrypted private key, keystore file, mnemonics, Ledger Nano S hardware wallet.
-- Easily send UBQ and *any* ERC-20 Standard Token. Many tokens included as default: DGD, GNT, ICN, MKR, PLU, REP, SNGLS, and more.
+- Easily send DBIX and *any* ERC-20 Standard Token. Many tokens included as default: DGD, GNT, ICN, MKR, PLU, REP, SNGLS, and more.
 - Send "Only ETH" or "Only ETC" to ensure you are not victim of replay attacks.
 - Generate and send offline transactions, ensuring your private keys never touch an internet-connected device.
-- Securely access your UBQ & Tokens on your [Ledger Nano S](http://support.ledgerwallet.com/knowledge_base/topics/how-to-use-myetherwallet-with-your-nano-s) via the Pyrus interface (Chrome & Opera natively, Firefox w/ [add-on](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/))
+- Securely access your DBIX & Tokens on your [Ledger Nano S](http://support.ledgerwallet.com/knowledge_base/topics/how-to-use-myetherwallet-with-your-nano-s) via the Pyrus interface (Chrome & Opera natively, Firefox w/ [add-on](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/))
 - Now in 18 languages thanks 100% to the amazing Ethereum community.
 - Supports URI Strings on Send Transaction Page. [Read More.](https://github.com/kvhnuke/etherwallet/issues/283#issuecomment-261849895)
     - to=[address]
@@ -28,8 +28,8 @@ Pyrus is an open source, javascript, client-side tool for generating UBQ wallets
     - tokenSymbol=[ARC | ICN | MKR | ....]
     - gasLimit=[number] OR gas=[number]
     - data=[hex data]
-    - Example 1: https://pyrus.ubiqsmart.com/?to=0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8&value=1&tokenSymbol=REP&gaslimit=50000#send-transaction
-    - Example 2: https://pyrus.ubiqsmart.com/?to=0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8&value=1&gaslimit=23000&data=0x5468616e6b20796f752c204d455720322e30#send-transaction
+    - Example 1: https://dbix.io/?to=0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8&value=1&tokenSymbol=REP&gaslimit=50000#send-transaction
+    - Example 2: https://dbix.io/?to=0x7cB57B5A97eAbe94205C07890BE4c1aD31E486A8&value=1&gaslimit=23000&data=0x5468616e6b20796f752c204d455720322e30#send-transaction
 
 **Goals**
 
@@ -49,9 +49,9 @@ Pyrus is an open source, javascript, client-side tool for generating UBQ wallets
 
 ### Users (non-developers)
 
-It is recommended you start with our help page @ https://pyrus.ubiqsmart.com/#help.
+It is recommended you start with our help page @ https://dbix.io/#help.
 
-You can run Pyrus on your computer instead of from the GitHub servers. You can generate a wallet completely offline and send transactions from the "Offline Transaction" page.
+You can run Galaxy on your computer instead of from the GitHub servers. You can generate a wallet completely offline and send transactions from the "Offline Transaction" page.
 
 1. Go to https://github.com/kvhnuke/etherwallet/releases/latest.
 2. Click on dist-vX.X.X.X.zip.
@@ -61,7 +61,7 @@ You can run Pyrus on your computer instead of from the GitHub servers. You can g
 
 In case you are not familiar, you need to keep the entire folder in order to run the website, not just index.html. Don't touch or move anything around in the folder. If you are storing a backup of the Pyrus repo for the future, we recommend just storing the ZIP so you can be sure the folder contents stay intact.
 
-As we are constantly updating Pyrus, we recommend you periodically update your saved version of the repo.
+As we are constantly updating Galaxy, we recommend you periodically update your saved version of the repo.
 
 
 
@@ -93,9 +93,9 @@ If you want to help contribute, here's what you need to know to get it up and ru
 - `layouts` are the pages themselves. These basically take all the pieces of the pages and compile into one massive page. The navigation is also found here...sort of.
     * `index.html` is for Pyrus.
     * `cx-wallet.html` is the main page for the Chrome Extension.
-    * `embedded.html` is for https://pyrus.ubiqsmart.com/embedded.html.
+    * `embedded.html` is for https://dbix.io/embedded.html.
 
-- You can control what shows up on Pyrus vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile to the Chrome Extension. The latter only to Pyrus.
+- You can control what shows up on Galaxy vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile to the Chrome Extension. The latter only to Pyrus.
 - embedded.html is for embedding the wallet generation into third-party sites. [Read more about it and how to listen for the address generated here.](https://www.reddit.com/r/ethereum/comments/4gn37o/embeddable_myetherwallet_super_simple_wallet/)
 - The wallet decrypt directives are at `scripts/directives/walletDecryptDrtv.js`. These show up on a lot of pages.
 - The navigation is in `scripts/services/globalServices.js`. Again, we control which navigation items show up in which version of the site in this single file.
@@ -112,11 +112,10 @@ If you want to help contribute, here's what you need to know to get it up and ru
 
 *Old: https://github.com/kvhnuke/etherwallet/issues/226.*
 
-**Guide by benjaminion for MEW + Ledger Nano S + Local Parity Node: https://github.com/benjaminion/eth-parity-qnap/wiki/Connecting-to-Pyrus**
 
-**[Announcing Pyrus v3.4: The Node Switcher](https://www.reddit.com/r/ethereum/comments/5lqx90/announcing_myetherwallet_v34_the_node_switcher/)**
+**[Announcing Galaxy v3.4: The Node Switcher](https://www.reddit.com/r/ethereum/comments/5lqx90/announcing_myetherwallet_v34_the_node_switcher/)**
 
-**That node must have an SSL certificate (aka be https://) or you must run Pyrus locally. [Download the latest version of Pyrus here](https://github.com/kvhnuke/etherwallet/releases/latest) and in order to connect to a non-SSL node. Or, you can get a free SSL certificate via [LetsEncrypt](https://letsencrypt.org/).**
+**That node must have an SSL certificate (aka be https://) or you must run Galaxy locally. [Download the latest version of Pyrus here](https://github.com/kvhnuke/etherwallet/releases/latest) and in order to connect to a non-SSL node. Or, you can get a free SSL certificate via [LetsEncrypt](https://letsencrypt.org/).**
 
 - Enter a name for your node
 
@@ -124,25 +123,25 @@ If you want to help contribute, here's what you need to know to get it up and ru
 
 - Enter the port
 
-- Select whether it is a UBQ / Custom chain.
+- Select whether it is a DBIX / Custom chain.
 
-    - **UBQ**: Shows default UBQ tokens, EIP-155=true, chainid=8, uses ubiqscan.io for links to addresses and txs.
+    - **DBIX**: Shows default DBIX tokens, EIP-155=true, chainid=5, uses dbixscan.io for links to addresses and txs.
 
     - **Custom**: Allows you to select whether EIP-155 is true or false, and provide a chainid if it's true.
 
-**If you want to connect to your own local gubiq or parity...**
+**If you want to connect to your own local gdbix or parity...**
 
-You must run Pyrus locally. This is due to the fact that our SSL site won't connect to your non-SSL local node. [Download the latest version of Pyrus here](https://github.com/kvhnuke/etherwallet/releases/latest) and use that to connect to your local node.
+You must run Galaxy locally. This is due to the fact that our SSL site won't connect to your non-SSL local node. [Download the latest version of Galaxy here](https://github.com/kvhnuke/etherwallet/releases/latest) and use that to connect to your local node.
 
 - Enter a name for your node
 
 - URL: http://127.0.0.1
 
-- Port: 8588
+- Port: 7565
 
-- Select whether it is a UBQ / ETC / Ropsten or Custom chain. (see above)
+- Select whether it is a DBIX / ETC / Ropsten or Custom chain. (see above)
 
-- Run gubiq using `gubiq --rpc --rpccorsdomain "null" --keystore "dont_put_secret_files_here_ever"`
+- Run gdbix using `gdbix --rpc --rpccorsdomain "null" --keystore "dont_put_secret_files_here_ever"`
 
 - or run parity using `parity --rpccorsdomain "*" --keys-path "dont_put_secret_files_here_ever"`
 
@@ -194,31 +193,7 @@ Read more @ [Help us translate Pyrus into ALL THE LANGUAGES!](https://www.reddit
 
 
 
-### Announcement History
-
-- 08/12/15: [Launch Post: UBQ Wallet Generator (for now)](https://www.reddit.com/r/ethereum/comments/3gkknd/ether_wallet_generator_for_now/). Never forget where you [came from](https://ipfs.pics/ipfs/QmXFK6NBy81ibvTEwnwwEUecXiRyQBriJUnKpaCaE4w7nF).
-- 08/19/15: [ETHER WALLET- Ready for the second round?](https://www.reddit.com/r/ethereum/comments/3h6o38/ether_wallet_ready_for_the_second_round/). We the domain name & SSL.
-- 08/24/15: [Lets purchase Augur rep, the easy way!](https://www.reddit.com/r/ethereum/comments/3i6eyd/lets_purchase_augur_rep_the_easy_way/)
-- 02/08/16: [Pyrus Chrome Extension: The Beta has Arrived](https://www.reddit.com/r/ethereum/comments/44vbef/myetherwallet_chrome_extension_the_beta_has/)
-- 03/03/16: [We’ve heard you loud and clear so tonight…we've launch offline / advanced transactions for Pyrus](https://www.reddit.com/r/ethereum/comments/48rf3d/weve_heard_you_loud_and_clear_so_tonightweve/)
-- 03/05/16: [[Small Announcement] We updated the "Generate Wallet" Page & "Help" Page on Pyrus to be more noob-friendly. Hit us with your feedback, please.](https://www.reddit.com/r/ethereum/comments/493t5u/small_announcement_we_updated_the_generate_wallet/)
-- 04/18/16: [Pyrus v2.0 (aka Mewtwo) has arrived!](https://www.reddit.com/r/ethereum/comments/4faooz/myetherwalletcom_v20_aka_mewtwo_has_arrived/)
-- 04/28/16: [Embeddable Pyrus: Super Simple Wallet Generation w/ ability to get the address generated](https://www.reddit.com/r/ethereum/comments/4gn37o/embeddable_myetherwallet_super_simple_wallet/)
-- 04/30/16: [How to participate in “The DAO” creation via Pyrus (yes...right NOW!)](https://www.reddit.com/r/ethtrader/comments/4h3xph/how_to_participate_in_the_dao_creation_via/)
-- 05/30/16: [Pyrus Update: Send DAO Tokens, Vote on Proposals, and the Chrome Extension finally gets updated!!](https://www.reddit.com/r/ethereum/comments/4lf71h/myetherwallet_update_send_dao_tokens_vote_on/)
-- 06/07/16: [⚠ BEWARE: MYETHERWALLET >>.INFO<< IS A PHISHING SCAM AND WILL TAKE ALL YOUR FUNDS. myEtherWallet is Pyrus](https://www.reddit.com/r/ethereum/comments/4rpurc/beware_myetherwallet_info_is_a_phishing_scam_and/)
-- 07/28/16: [Pyrus now Supports Sending Any Ethereum Token (ERC-20) — also learn about our future plans](https://www.reddit.com/r/ethereum/comments/4v0r32/myetherwallet_now_supports_sending_any_ethereum/)
-- 07/28/16: [Pyrus, Preventing Replays, and Ethereum Classic (ETC)](https://www.reddit.com/r/ethereum/comments/4v1y2t/myetherwallet_preventing_replays_and_ethereum/)
-- 08/14/16: [⚠ Malicious Phisher is running Google Ads for Pyrus ⚠ It does NOT go to Pyrus. Always check the URL before accessing or creating a new wallet! Use your bookmarks bar!](https://www.reddit.com/r/ethereum/comments/4xpj0u/malicious_phisher_is_running_google_ads_for/)
-- 08/22/16: [Help us translate Pyrus into ALL THE LANGUAGES!](https://www.reddit.com/r/ethereum/comments/4z55s2/help_us_translate_myetherwalletcom_into_all_the/)
-- 11/21/16: [Massive Pyrus Update: Better URIs, The Hardfork, and looking back at the Golem Crowdfund.](https://www.reddit.com/r/ethereum/comments/5e3alw/massive_myetherwalletcom_update_better_uris_the/)
-- 1/2/17: [Announcing Pyrus v3.4: The Node Switcher](https://www.reddit.com/r/ethereum/comments/5lqx90/announcing_myetherwallet_v34_the_node_switcher/)
-- 1/9/17: [Announcing Pyrus v3.4.3: Interacting with Contracts](https://www.reddit.com/r/ethereum/comments/5n0dj0/announcing_myetherwallet_v343_interacting_with/?utm_content=title&utm_medium=user&utm_source=reddit&utm_name=frontpage)
-- 2/3/17: [Pyrus v3.4.7: You can use your TREZOR on MEW. Thanks to all who made this a reality 🤗](https://www.reddit.com/r/ethereum/comments/5rsfu9/myetherwalletcom_v347_you_can_use_your_trezor_on/?utm_content=comments&utm_medium=user&utm_source=reddit&utm_name=frontpage)
-- 2/16/17: [Pyrus v3.5.0: Swap UBQ <-> BTC <-> REP via Bity, directly from MEW! (also: Parity backup phrase support + add'l contract features + our roadmap)](https://www.reddit.com/r/ethereum/comments/5ueysp/myetherwallet_v350_swap_eth_btc_rep_via_bity/?utm_content=comments&utm_medium=user&utm_source=reddit&utm_name=frontpage)
-- 4/9/17: [Ethereum vanity address generator](https://www.reddit.com/r/ethereum/comments/5yeb4n/ethereum_vanity_address_generator/?utm_content=comments&utm_medium=user&utm_source=reddit&utm_name=frontpage)
-- 4/30/17: [MEW v3.6.6: Enables you to access any path for your Mnemonic, Ledger & TREZOR. (ATTN: folks who have UBQ / ETC / Tokens stuck in a different path)](https://www.reddit.com/r/ethereum/comments/68f70l/mew_v366_enables_you_to_access_any_path_for_your/)
-- 5/7/17: [ENS disguise bid issue on Pyrus](https://www.reddit.com/r/ethereum/comments/69vz57/ens_disguise_bid_issue_on_myetherwallet/)
 
 
-#### Pyrus & Pyrus CX are licensed under The MIT License (MIT).
+
+#### Galaxy & Galaxy CX are licensed under The MIT License (MIT).

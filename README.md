@@ -1,7 +1,7 @@
 ## Website: https://dbix.io
 ## Chrome Extension: https://chrome.google.com/webstore/detail/myetherwallet-cx/nlbmnnijcnlegkjjpcfjclmcfggfefdm
 ## Download the Latest Release: https://github.com/kvhnuke/etherwallet/releases/latest
-- dist-vX.X.X.X.zip is the smaller package containing the gh-pages branch aka Pyrus
+- dist-vX.X.X.X.zip is the smaller package containing the gh-pages branch aka Galaxy
 - chrome-extension-vX.X.X.X.zip is the chrome extension package
 - source code is the full source for developers to get started with (although cloning or forking the mercury branch is probably a better choice)
 
@@ -16,8 +16,7 @@ Galaxy is an open source, javascript, client-side tool for generating DBIX walle
 
 - Generate Wallets completely client side.
 - Unlock variety of key types: raw private key, encrypted private key, keystore file, mnemonics, Ledger Nano S hardware wallet.
-- Easily send DBIX and *any* ERC-20 Standard Token. Many tokens included as default: DGD, GNT, ICN, MKR, PLU, REP, SNGLS, and more.
-- Send "Only ETH" or "Only ETC" to ensure you are not victim of replay attacks.
+- Easily send DBIX and *any* ERC-20 Standard Token.
 - Generate and send offline transactions, ensuring your private keys never touch an internet-connected device.
 - Securely access your DBIX & Tokens on your [Ledger Nano S](http://support.ledgerwallet.com/knowledge_base/topics/how-to-use-myetherwallet-with-your-nano-s) via the Pyrus interface (Chrome & Opera natively, Firefox w/ [add-on](https://addons.mozilla.org/en-US/firefox/addon/u2f-support-add-on/))
 - Now in 18 languages thanks 100% to the amazing Ethereum community.

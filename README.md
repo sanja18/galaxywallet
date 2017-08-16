@@ -90,11 +90,11 @@ If you want to help contribute, here's what you need to know to get it up and ru
 - `fonts` and `images` get moved into their respective folders. This isn't watched via gulp so if you add an image or font, you need to run `gulp` again.
 - `includes` are the pieces of the pages / the pages themselves. These are pretty self explanatory and where you will make most frontend changes.
 - `layouts` are the pages themselves. These basically take all the pieces of the pages and compile into one massive page. The navigation is also found here...sort of.
-    * `index.html` is for Pyrus.
+    * `index.html` is for Galaxy.
     * `cx-wallet.html` is the main page for the Chrome Extension.
     * `embedded.html` is for https://dbix.io/embedded.html.
 
-- You can control what shows up on Galaxy vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile to the Chrome Extension. The latter only to Pyrus.
+- You can control what shows up on Galaxy vs the Chrome Extension by using: `@@if (site === 'cx' )  {  ...  }` and `@@if (site === 'mew' ) { ... }`. Check out `sendTransaction.tpl` to see it in action. The former will only compile to the Chrome Extension. The latter only to Galaxy.
 - embedded.html is for embedding the wallet generation into third-party sites. [Read more about it and how to listen for the address generated here.](https://www.reddit.com/r/ethereum/comments/4gn37o/embeddable_myetherwallet_super_simple_wallet/)
 - The wallet decrypt directives are at `scripts/directives/walletDecryptDrtv.js`. These show up on a lot of pages.
 - The navigation is in `scripts/services/globalServices.js`. Again, we control which navigation items show up in which version of the site in this single file.

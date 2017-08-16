@@ -33,7 +33,7 @@ Galaxy is an open source, javascript, client-side tool for generating DBIX walle
 **Goals**
 
  - **Empower the people**: Give people the ability to interact with the Ethereum blockchain without having to run a full node.
- - **Make it easy & free**: Everyone should be able to create a wallet AND and send UBQ & Tokens.
+ - **Make it easy & free**: Everyone should be able to create a wallet AND and send DBIX & Tokens.
  - **People are the Priority**: You are the most important. Always. If monetization leads to a worse user experience, we don't do it. (ie: ads)
  - **A learning experience, too**: We want to educate about safely storing private keys and what public/private keys are. We don't want to hide behind usernames, passwords, or mnenmonics. That can come later.
  - **If it can be hacked, it will be hacked**: Never save, store, or transmit any private key anywhere at any time.

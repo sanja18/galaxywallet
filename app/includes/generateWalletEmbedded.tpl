@@ -1,7 +1,7 @@
 <div ng-controller='walletGenCtrl'>
 
   <!-- Top - Generate Wallet -->
-  <h1 translate="NAV_GenerateWallet"> Generate Wallet </h1>
+  <h1 translate="NAV_GenerateWallet"> Create New DBIX Account </h1>
   <article class="row">
     <div class="col-sm-6">
       <div class="form-group">
@@ -14,8 +14,8 @@
     </div>
     <div class="col-sm-6">
       <div class="form-group">
-        <h4 translate="NAV_GenerateWallet"> Generate Wallet </h4>
-        <a class="btn btn-primary btn-block" func="generateSingleWallet" ng-click="genNewWallet()" translate="NAV_GenerateWallet">Generate Wallet</a>
+        <h4 translate="NAV_GenerateWallet"> Create New DBIX Account </h4>
+        <a class="btn btn-primary btn-block" func="generateSingleWallet" ng-click="genNewWallet()" translate="NAV_GenerateWallet">Create New DBIX Account</a>
       </div>
     </div>
   </article>
@@ -28,7 +28,7 @@
 
     <!-- 0. Warning -->
     <h1 translate="GEN_SuccessMsg">Success! Your wallet has been generated.</h1>
-    <div class="alert alert-danger" translate="ERROR_28">**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it. Read the [help page](https://pyrus.ubiqsmart.com/#help) for instructions.</div>
+    <div class="alert alert-danger" translate="ERROR_28">**You need your Keystore/JSON File & password or Private Key** to access this wallet in the future. Please save & back it up externally! There is no way to recover a wallet if you do not save it. Read the [help page](https://dbix.io/#help) for instructions.</div>
     <!-- / 0. Warning -->
 
     <article class="row">
@@ -52,3 +52,4 @@
   </section>
 
 </div>
+

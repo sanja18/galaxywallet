@@ -2,7 +2,7 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>Pyrus: Open Source JavaScript Client-Side Ubiq Wallet</title>
+  <title>Galaxy: Open Source JavaScript Client-Side Dbix Wallet</title>
   <link rel="stylesheet" href="../css/etherwallet-master.min.css">
   <script type="text/javascript" src="../js/etherwallet-static.min.js"></script>
   <script type="text/javascript" src="../js/etherwallet-master.js"></script>
@@ -29,7 +29,7 @@
       <tr ng-repeat="twallet in allWallets track by $index">
         <td><div class="addressIdenticon small" title="Address Indenticon" blockie-address="{{twallet.addr}}" watch-var="wallet"></div></td>
         <td><label>{{twallet.nick}}</label><small class="quicksend-address">{{twallet.addr}}</small></td>
-        <td>{{twallet.balanceR | number:2 }} UBQ</td>
+        <td>{{twallet.balanceR | number:2 }} DBIX</td>
       </tr>
     </tbody>
   </table>
@@ -47,7 +47,7 @@
       <tr ng-repeat="twallet in allWatchOnly track by $index">
         <td><div class="addressIdenticon small" title="Address Indenticon" blockie-address="{{twallet.addr}}" watch-var="wallet"></div></td>
         <td><label>{{twallet.nick}}</label><small class="quicksend-address">{{twallet.addr}}</small></td>
-        <td>{{twallet.balance | number:2 }} UBQ</td>
+        <td>{{twallet.balance | number:2 }} DBIX</td>
       </tr>
     </tbody>
   </table>

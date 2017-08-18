@@ -14,8 +14,8 @@
         <span class="mono small">{{twallet.addr}}</span>
       </td>
       <td class="chrome-tokens">
-        <h3 class="text-success col-xs-12 point" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)" >{{twallet.balance|number}} UBQ</h3>
-        <h3 class="text-success col-xs-12 point" ng-show="showLongBal" ng-dblclick="showLongBal=!showLongBal">{{twallet.balance }} UBQ</h3>
+        <h3 class="text-success col-xs-12 point" ng-show="!showLongBal" ng-dblclick="showLongBal=!showLongBal" title="{{twallet.balance}} (Double-Click)" >{{twallet.balance|number}} DBIX</h3>
+        <h3 class="text-success col-xs-12 point" ng-show="showLongBal" ng-dblclick="showLongBal=!showLongBal">{{twallet.balance }} DBIX</h3>
         <div class="small col-xs-6 point" ng-repeat="token in twallet.tokens" ng-show="token.balance!=0 && token.balance!='loading'" ng-dblclick="showLongToken=!showLongToken" title="{{token.getBalance()}} (Double-Click)">
           <strong ng-show="!showLongToken">{{token.getBalance()|number}} </strong>
           <strong ng-show="showLongToken"> {{token.getBalance()}} </strong>

@@ -15,7 +15,7 @@
   </section>
   <!-- / Top - Bulk Generate -->
 
-  <!-- Bottom - Display Bulk Generated Wallets -->
+  <!-- Bottom - Display Bulk Generated Wallets DBIX-->
   <section ng-show="showWallets">
 
     <hr />

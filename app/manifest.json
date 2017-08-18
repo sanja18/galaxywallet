@@ -1,10 +1,10 @@
 {
-  "name": "Pyrus CX",
+  "name": "Galaxy CX",
   "version": "3.7.3",
   "version": "3.7.4",
   "manifest_version": 2,
-  "description": "Pyrus Chrome Extension",
-  "homepage_url": "https://pyrus.ubiqsmart.com/",
+  "description": "Galaxy Chrome Extension",
+  "homepage_url": "https://dbix.io/",
   "icons": {
     "16": "images/icons/icon16.png",
     "48": "images/icons/icon48.png",
@@ -13,7 +13,7 @@
   "options_page": "cx-wallet.html",
   "browser_action": {
     "default_icon": "images/icons/icon48.png",
-    "default_title": "Pyrus CX",
+    "default_title": "Galaxy CX",
     "default_popup": "browser_action/browser_action.html"
   },
   "permissions": [

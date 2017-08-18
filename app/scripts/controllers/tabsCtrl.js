@@ -6,8 +6,8 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
     $scope.customNodeModal = document.getElementById('customNodeModal') ? new Modal(document.getElementById('customNodeModal')) : null;
     $scope.Validator = Validator;
     $scope.nodeList = nodes.nodeList;
-    $scope.defaultNodeKey = 'ubq_pyrus';
-    $scope.customNode = { options: 'ubq', name: '', url: '', port: '', httpBasicAuth: null, eip155: true, chainId: '8' };
+    $scope.defaultNodeKey = 'dbix_galaxy';
+    $scope.customNode = { options: '', name: 'MyDBIXNode', url: 'https://arabiancha.in', port: '8545', httpBasicAuth: null, eip155: false, chainId: '5' };
     $scope.customNodeCount = 0;
     $scope.nodeIsConnected = true;
     $scope.browserProtocol = window.location.protocol;
@@ -72,7 +72,7 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
     }
     $scope.addCustomNodeToList = function(nodeInfo) {
         var tempObj = null;
-        if (nodeInfo.options == 'ubq') tempObj = JSON.parse(JSON.stringify(nodes.nodeList.ubq_pyrus));
+        if (nodeInfo.options == 'dbix') tempObj = JSON.parse(JSON.stringify(nodes.nodeList.dbix_galaxy));
         else if (nodeInfo.options == 'cus') {
             tempObj = JSON.parse(JSON.stringify(nodes.customNodeObj));
             tempObj.eip155 = nodeInfo.eip155;
@@ -169,7 +169,7 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
         for (var i = 0; i < globalFuncs.successMsgs.length; i++) $scope.setLanguageVal('SUCCESS_' + (i + 1), 'successMsgs', i);
     }
 
-    $scope.setGubiqErrMsgLanguage = function() {
+    $scope.setGethErrMsgLanguage = function() {
         globalFuncs.gethErrorMsgs = {};
         for (var s in globalFuncs.gethErrors) {
             var key = globalFuncs.gethErrors[s];
@@ -193,7 +193,7 @@ var tabsCtrl = function($scope, globalService, $translate, $sce) {
         $translate.use(key);
         $scope.setErrorMsgLanguage();
         if (globalFuncs.getEthNodeName() == 'geth')
-            $scope.setGubiqErrMsgLanguage();
+            $scope.setGethErrMsgLanguage();
         else
             $scope.setParityErrMsgLanguage();
         $scope.curLang = value;

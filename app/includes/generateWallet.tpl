@@ -1,7 +1,7 @@
 <main class="tab-pane active text-center" ng-if="globalService.currentTab==globalService.tabs.generateWallet.id" ng-controller='walletGenCtrl' role="main">
 
   <section class="row" ng-show="!wallet && !showGetAddress">
-    <h1 translate="NAV_GenerateWallet" aria-live="polite"> Generate Wallet</h1>
+    <h1 translate="NAV_GenerateWallet" aria-live="polite"> Create New DBIX Account</h1>
     <div class="col-sm-8 col-sm-offset-2">
       <h4 translate="GEN_Label_1"> Enter password </h4>
       <div class="input-group">
@@ -15,7 +15,7 @@
         <span tabindex="0" aria-label="make password visible" role="button" class="input-group-addon eye" ng-click="showPass=!showPass"></span>
       </div>
       <br />
-      <a tabindex="0" role="button" class="btn btn-primary btn-block" func="generateSingleWallet" ng-click="genNewWallet()" translate="NAV_GenerateWallet">Generate Wallet</a>
+      <a tabindex="0" role="button" class="btn btn-primary btn-block" func="generateSingleWallet" ng-click="genNewWallet()" translate="NAV_GenerateWallet">Create New DBIX Account</a>
       <br /><br /><br /><br /><br /><br />
     </div>
   </section>
@@ -35,7 +35,7 @@
     </div>
     <div class="col-xs-12 alert alert-danger">
       <span>
-      Pyrus is not a web wallet & does not store or transmit this secret information at any time. <br />
+      Galaxy is not a web wallet & does not store or transmit this secret information at any time. <br />
       <strong>If you do not save your wallet file and password, we cannot recover them.</strong><br />
       Save your wallet file now & back it up in a second location (not on your computer).
       <br /><br />

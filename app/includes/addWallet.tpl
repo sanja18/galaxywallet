@@ -85,7 +85,7 @@
       <!-- Add an Account to Watch -->
       <div ng-show="walletType=='watchonlyaccount'">
         <h4 translate="ADD_Label_4"> Add an Account to Watch: </h4>
-        <p class="text-danger" translate="ADD_Warning_1">You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer UBQ from it. </p>
+        <p class="text-danger" translate="ADD_Warning_1">You can add any account to "watch" on the wallets tab without uploading a private key. This does ** not ** mean you have access to this wallet, nor can you transfer DBIX from it. </p>
         <div class="form-group">
           <label translate="ADD_Label_2"> Create a Nickname: </label>
           <input class="form-control" type="text" placeholder="{{ 'MYWAL_Nick' | translate }}" ng-model="addAccount.nickName" ng-change="watchOnlyChange()"/>
@@ -132,12 +132,12 @@
       <h5 translate="sidebar_AccountBal">Account Balance:</h5>
 
       <ul class="account-info">
-        <li><strong>{{etherBalance}}</strong> UBQ </li>
+        <li><strong>{{etherBalance}}</strong> DBIX </li>
       </ul>
 
       <h5 translate="sidebar_TransHistory"> Transaction History: </h5>
       <ul class="account-info">
-        <li><a href="https://ubiqscan.io/en/address/{{wallet.getAddressString()}}" target="_blank">https://ubiqscan.io/en/address/{{wallet.getAddressString()}}</a></li>
+        <li><a href="http://dbixscan.io/addr/{{wallet.getAddressString()}}" target="_blank">http://dbixscan.io/addr/{{wallet.getAddressString()}}</a></li>
       </ul>
 
 
@@ -216,7 +216,7 @@
           <tr ng-repeat="wallet in HDWallet.wallets track by $index">
             <td><input type="radio" name="addressSelect" value="{{$index}}" ng-model="HDWallet.id" /></td>
             <td>{{wallet.getChecksumAddressString()}}</td>
-            <td>{{wallet.getBalance()}} ETH</td>
+            <td>{{wallet.getBalance()}} DBIX</td>
           </tr>
           <tr class="m-addresses">
             <td class"small"><a ng-show="HDWallet.numWallets > 5" ng-click="AddRemoveHDAddresses(false)" translate="MNEM_prev">Previous Addresses</a></td>
@@ -236,3 +236,4 @@
 
 
 </main>
+

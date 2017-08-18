@@ -2,27 +2,27 @@
 <html lang="en" ng-app="mewApp">
 <head>
   <meta charset="utf-8">
-  <title>Pyrus: Open-Source & Client-Side Ubiq Wallet</title>
-  <link rel="canonical" href="https://pyrus.ubiqsmart.com" />
-  <meta name="description" content="Open-Source & Client-Side Ubiq Wallet">
+  <title>Galaxy: Open-Source & Client-Side DBIX Wallet</title>
+  <link rel="canonical" href="https://dbix.io" />
+  <meta name="description" content="Open-Source & Client-Side Dbix Wallet">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/etherwallet-master.min.css">
   <script type="text/javascript" src="js/etherwallet-static.min.js"></script>
   <script type="text/javascript" src="js/etherwallet-master.js"></script>
-
+<!--
   <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-touch-icon.png">
   <link rel="icon" type="image/png" href="images/fav/favicon-32x32.png" sizes="32x32">
   <link rel="icon" type="image/png" href="images/fav/favicon-16x16.png" sizes="16x16">
   <link rel="manifest" href="images/fav/manifest.json">
-  <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#0e97c0">
-  <link rel="shortcut icon" href="images/fav/favicon.ico">
+  <link rel="mask-icon" href="images/fav/safari-pinned-tab.svg" color="#0e97c0">-->
+  <link rel="shortcut icon" href="images/fav/fav.ico">
   <meta name="msapplication-config" content="images/fav/browserconfig.xml">
   <meta name="theme-color" content="#163151">
 
-  <meta property="og:url"         content="https://pyrus.ubiqsmart.com" />
-  <meta property="og:title"       content="Pyrus" />
-  <meta property="og:description" content="Pyrus: Open-Source & Client-Side Ubiq Wallet" />
+  <meta property="og:url"         content="https://dbix.io" />
+  <meta property="og:title"       content="Galaxy" />
+  <meta property="og:description" content="Galaxy: Open-Source & Client-Side Dbix Wallet" />
   <meta property="og:image"       content="images/fb-myetherwallet.png" />
   <meta property="og:image"       content="images/fb-mewtwo.jpg" />
 </head>
@@ -38,12 +38,12 @@
   <section class="bg-gradient header-branding">
     <section class="container">
 
-      @@if (site === 'mew' ) { <a class="brand" href="https://pyrus.ubiqsmart.com/" aria-label="Go to homepage"> <img src="images/logo-pyrus.svg"   height="16px" width="160px" alt="Pyrus" /></a> }
-      @@if (site === 'cx'  ) { <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">                <img src="images/logo-pyrus.svg" height="64px" width="245px" alt="Pyrus" /></a> }
+      @@if (site === 'mew' ) { <a class="brand" href="https://dbix.io/" aria-label="Go to homepage"> <img src="images/logo2.png"   height="64px" width="350px" alt="Galaxy" /></a> }
+      @@if (site === 'cx'  ) { <a class="brand" href="/cx-wallet.html" aria-label="Go to homepage">                <img src="images/logo2.png" height="64px" width="350px" alt="Galaxy" /></a> }
 
-      <div class="tagline"><span style="max-width: 395px">Pyrus - Open-Source & Client-Side Ubiq Wallet</span>
+      <div class="tagline"><span style="max-width: 395px">Galaxy - Open-Source & Client-Side DBIX Wallet</span>
 
-        &middot; v3.7.4 &nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
         <span class="dropdown" ng-cloak>
           <a tabindex="0"  aria-haspopup="true" aria-expanded="false" aria-label="change language. current language {{curLang}}" class="dropdown-toggle" ng-click="dropdown = !dropdown">{{curLang}}<i class="caret"></i></a>
@@ -122,10 +122,11 @@
         }
       </ul>
     </div>
-    <a aria-hidden="true" ng-show="showRightArrow" class="nav-arrow-right" ng-click="scrollRight(100);" ng-mouseover="scrollHoverIn(false,2);" ng-mouseleave="scrollHoverOut()">&#187;</a>
+    <a aria-hidden="true" ng-show="showRightArrow" class="nav-arrow-right hidden" ng-click="scrollRight(100);" ng-mouseover="scrollHoverIn(false,2);" ng-mouseleave="scrollHoverOut()">&#187;</a>
   </nav>
 
   @@if (site === 'mew' ) { @@include( './header-node-modal.tpl', { "site": "mew" } ) }
   @@if (site === 'cx'  ) { @@include( './header-node-modal.tpl', { "site": "cx"  } ) }
 
 </header>
+

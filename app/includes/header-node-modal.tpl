@@ -11,14 +11,14 @@
           <strong translate="NODE_Subtitle">To connect to a local node...</strong>
           <ul class="small">
             <li> URL: http://127.0.0.1</li>
-            <li> Port: 8588 </li>
-            <li> Run gubiq: <code>gubiq --rpc --rpccorsdomain "null" --keystore "dont_put_secret_files_here_ever"</code></li>
-            <li> Run Parity: <code>parity --rpccorsdomain "*" --keys-path "dont_put_secret_files_here_ever"</code></li>
+            <li> Port: 7565 </li>
+            <li> Run gdbix: <code>gdbix --rpc --rpcport 7565 --rpccorsdomain "null"</code></li>
+            <li> Check: <code>Custom</code> (optional - uncheck <code>Supports EIP-155</code>)</li>
           </ul>
         </p>
 
         <div ng-show="browserProtocol=='https:'" class="alert alert-danger small" translate="NODE_Warning">
-          Your node must be HTTPS in order to connect to it via Pyrus. You can [download the Pyrus repo & run it locally](https://github.com/ubiq/pyruswallet/releases/latest) to connect to any node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
+          Your node must be HTTPS in order to connect to it via Galaxy. You can [download the Galaxy repo & run it locally](https://github.com/ArabianChain/galaxywallet/releases/latest) to connect to any node. Or, get free SSL certificate via [LetsEncrypt](https://letsencrypt.org/)</a>.
         </div>
 
         <section class="row">
@@ -26,7 +26,7 @@
             <label translate="NODE_Name">Node Name</label>
             <input class="form-control"
                    type="text"
-                   placeholder="My UBQ Node"
+                   placeholder="My DBIX Node"
                    ng-model="customNode.name"
                    ng-class="Validator.isAlphaNumericSpace(customNode.name) ? 'is-valid' : 'is-invalid'">
           </div>
@@ -38,7 +38,7 @@
 
           <div class="clearfix col-xs-3">
             <label class="NODE_Port">Port</label>
-            <input class="form-control" type="text" placeholder="8588" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'">
+            <input class="form-control" type="text" placeholder="7565" ng-model="customNode.port" ng-class="Validator.isPositiveNumber(customNode.port) || customNode.port=='' ? 'is-valid' : 'is-invalid'">
           </div>
 
           <div class="clearfix col-xs-12">
@@ -56,7 +56,7 @@
           </div>
 
           <div class="clearfix col-xs-12 radio">
-            <label><input name="options" type="radio" ng-model="customNode.options" value="ubq"> UBQ </label>
+            <label><input name="options" type="radio" ng-model="customNode.options" value="dbix"> DBIX </label>
             <label><input name="options" type="radio" ng-model="customNode.options" value="cus"> Custom </label>
             <label><input type="checkbox" ng-model="customNode.eip155" value="true"> Supports EIP-155 </label>
           </div>
@@ -82,3 +82,4 @@
     </section>
   </section>
 </article>
+

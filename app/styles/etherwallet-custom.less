@@ -1,3 +1,7 @@
+body {
+  background: #e8e8e6;
+}
+
 img {
   max-width: 100%;
   height: auto;
@@ -9,7 +13,7 @@ textarea {
 
 // footer
 footer {
-  background-color: @ubiq-green-dark;
+  background-color: #777777;
   color: white;
   margin-top: 100px;
   padding-top: @space-xs;
@@ -23,7 +27,7 @@ footer {
     margin: @space-xs 0 @space-sm;
   }
   a {
-    color: @link-color;
+    color: #f7a831;
     &:hover,
     &:focus {
       color: darken(@link-color, 5%);
@@ -352,6 +356,12 @@ input[type="password"]+.eye {
   cursor: pointer;
 }
 
+#chbl {
+  color: #f7a831;
+  font-weight: 700;
+  margin-top: 30px;
+}
+
 .node-remove {
   width: 16px;
   height: 16px;
@@ -616,7 +626,7 @@ header.Rinkeby {
   }
 }
 header.Custom  {
-  border-top: 3px solid @brand-cust;
+  border-top: 3px solid transparent;
   .NAV_ENS { display: none!important; }
   & + .container .modal-content {
     border: 3px solid @brand-cust;

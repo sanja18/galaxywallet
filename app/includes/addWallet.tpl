@@ -48,7 +48,7 @@
       </div>
       <!-- / Generate New Wallet -->
 
-      <!-- Select Your Wallet File -->
+      <!-- Select Your Wallet File DBIX-->
       <div ng-show="walletType=='fileupload'">
         <h4 translate="ADD_Radio_2_alt">Select Your Wallet File: </h4>
         <div class="form-group">

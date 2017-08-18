@@ -158,9 +158,10 @@ var offlineTxCtrl = function($scope, $sce, walletService) {
             if (data.error) {
                 $scope.notifier.danger(data.msg);
             } else {
-                $scope.notifier.success(globalFuncs.successMsgs[2] + "<a href='http://ubiqscan.io/en/tx/" + data.data + "' target='_blank'>" + data.data + "</a>");
+                $scope.notifier.success(globalFuncs.successMsgs[2] + "<a href='http://dbixscan.io/tx/" + data.data + "' target='_blank'>" + data.data + "</a>");
             }
         });
     }
 };
 module.exports = offlineTxCtrl;
+

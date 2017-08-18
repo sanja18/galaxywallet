@@ -2,8 +2,8 @@
 var nodes = function() {}
 nodes.customNode = require('./nodeHelpers/customNode');
 nodes.nodeTypes = {
-    UBQ: "UBQ",
-    Custom: "CUSTOM ETH"
+    DBIX: "DBIX",
+    Custom: "CUSTOM DBIX"
 };
 nodes.ensNodeTypes = [];
 nodes.customNodeObj = {
@@ -12,7 +12,7 @@ nodes.customNodeObj = {
     'blockExplorerAddr': '',
     'type': nodes.nodeTypes.Custom,
     'eip155': false,
-    'chainId': '',
+    'chainId': '5',
     'tokenList': [],
     'abiList': [],
     'estimateGas': false,
@@ -20,18 +20,18 @@ nodes.customNodeObj = {
     'lib': null
 };
 nodes.nodeList = {
-    'ubq_pyrus': {
-        'name': 'UBQ',
-        'blockExplorerTX': 'https://ubiqscan.io/en/tx/[[txHash]]',
-        'blockExplorerAddr': 'https://ubiqscan.io/en/address/[[address]]',
-        'type': nodes.nodeTypes.UBQ,
+    'dbix_galaxy': {
+        'name': 'DBIX',
+        'blockExplorerTX': 'http://dbixscan.io/tx/[[txHash]]',
+        'blockExplorerAddr': 'http://dbixscan.io/addr/[[address]]',
+        'type': nodes.nodeTypes.DBIX,
         'eip155': true,
-        'chainId': 8,
-        'tokenList': require('./tokens/ubqTokens.json'),
-        'abiList': require('./abiDefinitions/ubqAbi.json'),
+        'chainId': 5,
+        'tokenList': require('./tokens/dbixTokens.json'),
+        'abiList': require('./abiDefinitions/dbixAbi.json'),
         'estimateGas': true,
-        'service': 'Ubiqscan.io',
-        'lib': new nodes.customNode('https://rpc1.ubiqscan.io', '')
+        'service': 'Arabiancha.in',
+        'lib': new nodes.customNode('https://arabiancha.in', '')
     }
 };
 nodes.ethPrice = require('./nodeHelpers/ethPrice');

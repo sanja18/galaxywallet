@@ -17,7 +17,7 @@
     </label>
     <label class="radio" ng-hide="globalService.currentTab!==globalService.tabs.viewWalletInfo.id">
       <input aria-label="address" type="radio" ng-model="walletType" value="addressOnly" />
-      View with Address Only
+      <span id="chbl">Check Any Address Balance (without importing passphrase)</span>
     </label>
   </section>
   <!-- Column 1 - Select Type of Key -->
@@ -156,9 +156,9 @@
       <div class="text-center">
         <p>Guide:<br />
           <a href="https://blog.trezor.io/trezor-integration-with-myetherwallet-3e217a652e08#.n5fddxmdg" target="_blank">
-            How to use TREZOR with Pyrus
+            How to use TREZOR with Galaxy
           </a><br />
-          <a tabindex="0" role="button" class="btn btn-sm btn-default" href="https://trezor.io/?a=pyrus.ubiqsmart.com" target="_blank">
+          <a tabindex="0" role="button" class="btn btn-sm btn-default" href="https://trezor.io/?a=dbix.io" target="_blank">
             Don't have a TREZOR? Order one now.
           </a>
         </p>
@@ -205,7 +205,7 @@
          role="button"
          tabindex="0"
          translate="ADD_Label_6_short"
-      > UNLOCK </a>
+      > VIEW BALANCE </a>
     </div>
     <div class="form-group">
       <a class="btn btn-primary btn-block"

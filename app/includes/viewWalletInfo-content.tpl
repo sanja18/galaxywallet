@@ -11,7 +11,7 @@
     <div class="col-sm-10">
       <div class="account-help-icon">
         <img src="images/icon-help.svg" class="help-icon" />
-        <p class="account-help-text" translate="x_AddessDesc">You may know this as your "Account #" or your "Public Key". It's what you send people so they can send you ETH. That icon is an easy way to recognize your address.</p>
+        <p class="account-help-text" translate="x_AddessDesc">You may know this as your "Account #" or your "Public Key". It's what you send people so they can send you DBIX. That icon is an easy way to recognize your address.</p>
         <h5 translate="x_Address">Your Address:</h5>
       </div>
       <input class="form-control" type="text" ng-value="wallet.getChecksumAddressString()" readonly="readonly">
@@ -24,8 +24,8 @@
   <section ng-show='showEnc'>
     <div class="account-help-icon">
       <img src="images/icon-help.svg" class="help-icon" />
-      <p class="account-help-text" translate="x_KeystoreDesc">This Keystore / JSON file matches the format used by Mist & Geth so you can easily import it in the future. It is the recommended file to download and back up.</p>
-      <h5 translate="x_Keystore">Keystore/JSON File (Recommended • Encrypted • Mist/Geth Format)</h5>
+      <p class="account-help-text" translate="x_KeystoreDesc">This Keystore / JSON file matches the format used by Dbixwall so you can easily import it in the future. It is the recommended file to download and back up.</p>
+      <h5 translate="x_Keystore">Keystore/JSON File (Recommended • Encrypted • Dbixwall Format)</h5>
     </div>
     <a class="btn btn-info btn-block" href="{{blobEnc}}" download="{{encFileName}}" translate="x_Download"> DOWNLOAD </a>
   </section>
@@ -72,4 +72,6 @@
       </div>
     </div>
   </section>
+
+
 

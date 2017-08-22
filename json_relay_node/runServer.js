@@ -7,7 +7,7 @@ var privateKey  = fs.readFileSync('/home/gdbix/certs/arabiancha.in.key', 'utf8')
 var certificate = fs.readFileSync('/home/gdbix/certs/arabiancha.in.cert', 'utf8');
 var credentials = {key: privateKey, cert: certificate};
 var app = express();
-app.use(vhost('arabiancha.in', require('./index.js').app));
+app.use(vhost('rpc.arabiancha.in', require('./index.js').app));
 var httpServer = http.createServer(app);
 var httpsServer = https.createServer(credentials, app);
 httpServer.listen(80);

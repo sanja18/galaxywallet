@@ -31,7 +31,7 @@ nodes.nodeList = {
         'abiList': require('./abiDefinitions/dbixAbi.json'),
         'estimateGas': true,
         'service': 'Arabiancha.in',
-        'lib': new nodes.customNode('https://arabiancha.in', '')
+        'lib': new nodes.customNode('https://rpc.arabiancha.in', '')
     }
 };
 nodes.ethPrice = require('./nodeHelpers/ethPrice');

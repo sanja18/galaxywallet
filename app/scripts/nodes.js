@@ -15,7 +15,7 @@ nodes.customNodeObj = {
     'chainId': '5',
     'tokenList': [],
     'abiList': [],
-    'estimateGas': false,
+    'estimateGas': true,
     'service': 'Custom',
     'lib': null
 };
